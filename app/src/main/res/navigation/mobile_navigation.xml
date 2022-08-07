@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_search_movies">
+
+    <fragment
+        android:id="@+id/nav_search_movies"
+        android:name="com.example.movieapp.ui.ui.home.SearchMovieFragment"
+        android:label="@string/menu_search_movies"
+        tools:layout="@layout/fragment_search_movies" />
+
+    <fragment
+        android:id="@+id/nav_saved_movies"
+        android:name="com.example.movieapp.ui.ui.gallery.SavedMoviesFragment"
+        android:label="@string/menu_saved_movies"
+        tools:layout="@layout/fragment_saved_movies" />
+
+    <fragment
+        android:id="@+id/nav_popular_now"
+        android:name="com.example.movieapp.ui.ui.popularNow.PopularNowFragment"
+        android:label="@string/popularNow"
+        tools:layout="@layout/fragment_popular_now" />
+    <fragment
+        android:id="@+id/nav_random"
+        android:name="com.example.movieapp.ui.ui.popularNow.RandomMovieFragment"
+        android:label="@string/random_Movie"
+        tools:layout="@layout/fragment_random" />
+    <fragment
+        android:id="@+id/nav_movieDetail"
+        android:name="com.example.movieapp.ui.movieDetail.MovieDetailFragment"
+        android:label="Movie Details"
+        tools:layout="@layout/fragment_movie_detail" />
+
+
+</navigation>
